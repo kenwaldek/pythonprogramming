@@ -97,7 +97,7 @@ class window(QMainWindow):
             self.textEdit.setText(text)
 
     def file_save(self):
-        name, _ = QFileDialog.getSaveFileName(self,'Save File')
+        name, _ = QFileDialog.getSaveFileName(self,'Save File', options=QFileDialog.DontUseNativeDialog)
         file = open(name, 'w')
         text = self.textEdit.toPlainText()
         file.write(text)
