@@ -82,8 +82,6 @@ class window(QMainWindow):
         self.textEdit = QTextEdit()
         self.setCentralWidget(self.textEdit)
 
-
-
     def file_open(self):
         # need to make name an tupple otherwise i had an error and app crashed
         name, _ = QFileDialog.getOpenFileName(self, 'Open File', options=QFileDialog.DontUseNativeDialog)
@@ -102,9 +100,6 @@ class window(QMainWindow):
         text = self.textEdit.toPlainText()
         file.write(text)
         file.close()
-
-
-##End of code problem
 
     def color_picker(self):
         color = QColorDialog.getColor()
@@ -164,13 +159,11 @@ class window(QMainWindow):
             self.completed += 0.0001
             self.progress.setValue(self.completed)
 
-
     def enlarge_window(self, state):
         if state == Qt.Checked:
             self.setGeometry(50, 50, 1000, 600)
         else:
             self.setGeometry(50, 50 , 500, 300)
-
 
     def close_application(self):
 
