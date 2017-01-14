@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 #  -*- coding:utf-8 -*-
 ###############################################################
-# kenwaldek                           GPL-license
+# kenwaldek                           MIT-license
 
 # Title: PyQt5 lesson 14              Version: 1.0
 # Date: 09-01-17                      Language: python3
