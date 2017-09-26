@@ -44,7 +44,7 @@ class window(QMainWindow):
         btn.clicked.connect(self.close_application)
 
         btn.resize(btn.sizeHint())
-        btn.move(0, 0)
+        btn.move(0, 100)
         self.show()
 
     def close_application(self):
